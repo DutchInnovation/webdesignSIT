@@ -73,6 +73,54 @@ a:visited {
 a:hover {
   color: #666;
 }
+
+section {
+  padding: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+section a:hover {
+  background-color: #333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a000051;
+  color: #fff;
+}
+
+
+
+
+
+
+/* Make website responsive
+
 /* For devices with screen width up to 768px, such as tablets */
 @media (max-width: 768px) {
   /* Adjust font sizes */
