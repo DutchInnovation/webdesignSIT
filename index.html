@@ -1,82 +1,41 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Midterm website</title>
-  <meta name="Midterm" content="Midterm Project">
-  <style>
-    * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
-    color:black;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
- .medium-heading {
-	width: 100%;
-max-width: 100%;
-margin-top: 10px;
-padding-top: 10px;
-padding-right: 60px;
-padding-left: 60px;
-text-align: center;
-color: #7c8034;
-font-family: 'Bitter', sans-serif;
- }
-
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.min.js" integrity="sha512-mp3VeMpuFKbgxm/XMUU4QQUcJX4AZfV5esgX72JQr7H7zWusV6lLP1S78wZnX2z9dwvywil1VHkHZAqfGOW7Nw==" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
-</head>
-<body>
-	
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="#">Richard</a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">About me</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link active" href="#">Background</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link active" href="#">Thought about Japan</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-
-	  <!-- make a div with and img tag in it with this img "data:image/jpeg;base64,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" -->
-	 <div class="section bg-primary-3 container-1 intro wf-section">
-		<img src="https://respromos.com/wp-content/uploads/2018/03/City-Window-Business-1900x600.jpg" alt="My Picture"/>
-		</div>
-
-
-	  
-<div class="section bg-primary-3 container-1 intro wf-section"></div>
-
-<section id="feature-section" class="feature-section-2 wf-section">
-	<div class="flex-container-2 w-container">
-		<h6>About me</h6>
-		<h3 class="medium-heading">About Richard&nbsp;Ruijgrok.</h3>
-		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem incidunt, delectus officiis nihil ipsum ab neque praesentium recusandae quae, odit placeat quaerat iure fugit nisi quidem explicabo, voluptatem autem aut.
-	</div>
-</section>
-
-
-
-
-
-
-</body>
-
+  </head>
+  <body>
+    <h1>Welcome to our page</h1>
+    <a href="tmanh.html">
+        <div class="wrapper">
+            <img src="./img/DSC09080.JPG" alt="Your Image">
+            <div class="text">
+              <h2>Tuan Manh Nguyen</h2>
+              <p> University of Messina, Italy</p>
+              <p>Vietnamese culture is a unique blend of various traditions and influences, including food, clothing, festivals, family values, music, literature, and art forms such as water puppetry and silk weaving. It reflects the country's complex history and diverse influences, 
+                and is known for its vibrancy and respect for family and community.
+              </p>
+              <br>
+              <p>Japan is a truly amazing country with so much to offer. 
+                From its rich history and culture to its modern cities and cutting-edge technology, Japan is a unique and fascinating place. 
+                The people are friendly and welcoming, the food is delicious, and the natural beauty of the country is simply breathtaking. 
+                Whether you're exploring Tokyo's vibrant neighborhoods, or admiring the cherry blossoms in springtime, Japan is a country that never fails to captivate and inspire.
+              </p>
+              
+              
+            </div>
+          </div>          
+    </a>
+    <a href="about-me-2.html">
+        <div class="wrapper">
+            <img src="./img/DSC09080.JPG" alt="Your Image">
+            <div class="text">
+              <h2>Image Title</h2>
+              <p>Image description or caption goes here...</p>
+            </div>
+          </div>        
+    </a>
+  </body>
 </html>
-

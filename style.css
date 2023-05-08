@@ -1,89 +1,169 @@
-* {
-    box-sizing: border-box;
-  }
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.image-container {
+  position: relative;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-container:hover .image-text {
+  opacity: 1;
+}
+
+img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+}
+div {
+  position: center;
+  top: 40%;
+  left: 50%;
   
+}
+h1{
+  text-align: center;
+  color: #333;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+
+img {
+  margin-right: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: #666;
+}
+
+section {
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+section a:hover {
+  background-color: #333;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff51;
+  color: #fff;
+}
+
+#image img {
+  display: block; 
+  margin: 0 auto; 
+}
+
+
+
+
+
+/* Make website responsive
+
+/* For devices with screen width up to 768px, such as tablets */
+@media (max-width: 768px) {
+  /* Adjust font sizes */
   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-  
-  main {
-    margin: 20px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-  
-  p {
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
   }
-  
+  /* Adjust layout using a responsive grid system */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 10px;
+  }
+  .item {
+    width: 100%;
+  }
+  /* Adjust image sizes */
   img {
-    display: block;
-    max-width: 20%;
-    border-radius: 20%;
+    max-width: 100%;
     height: auto;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+}
+
+/* For devices with screen width up to 480px, such as cellphones */
+@media (max-width: 480px) {
+  /* Adjust font sizes */
+  body {
     font-size: 14px;
-    margin-top: 20px;
   }
-  
-  @media screen and (max-width: 768px) {
-    main {
-      margin: 10px;
-    }
-    
-    h2 {
-      font-size: 20px;
-    }
-    
-    p {
-      font-size: 14px;
-    }
-    
-    img {
-      margin: 10px auto;
-    }
-    
-    footer {
-      font-size: 12px;
-    }
+  /* Adjust layout using a responsive grid system */
+  .container {
+    max-width: 480px;
+    padding: 0;
   }
-  
+  .item {
+    width: 100%;
+  }
+}
+
