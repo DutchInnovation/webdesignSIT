@@ -1,6 +1,6 @@
 
 body {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 20px;
@@ -16,25 +16,11 @@ body {
   height: 100vh;
 }
 
-.image-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 30px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-}
 
-.image-container:hover .image-text {
-  opacity: 1;
-}
 
 img {
   display: block;
-  max-width: 30%;
+  max-width: 15%;
   height: auto;
 }
 div {
@@ -57,6 +43,8 @@ h1{
 
 img {
   margin-right: 20px;
+  border-radius: 50%;
+  
 }
 
 .text {
@@ -80,44 +68,30 @@ section {
   text-align: center;
 }
 
-
-section h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-section p {
+p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-align: left;
+
 }
 
-section a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-section a:hover {
-  background-color: #333;
-}
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff51;
+  background-color: #fffb0000;
   color: #fff;
 }
 
 #image img {
   display: block; 
   margin: 0 auto; 
+}
+
+#paragraph{
+  text-align: left;
 }
 
 
