@@ -24,13 +24,11 @@ h1{
   padding: 10px; 
 }
 
-
-
-
 .text {
   display: flex;
   flex-direction: column;
 }
+
 a {
   color: #000000;
   text-decoration: none;
@@ -55,16 +53,12 @@ p {
   text-align: left;
 
 }
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #fffb0000;
-  color: #fff;
+header{
+  text-align: center;
+  margin: 0 auto;
+	margin-top: 3em;
+  max-width: 37.5em;
 }
-
 #image img {
   display: block; 
   margin: 0 auto; 
@@ -82,7 +76,7 @@ header {
 .footer {
 	padding: 4em 0;
 	color: #000000;
-	background: #f3fd28;
+	background: #ebf07d;
 	margin-top: 3em;
 }
 
