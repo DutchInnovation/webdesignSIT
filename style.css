@@ -3,32 +3,16 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  padding: 20px;
-  border: 1px solid #ddd;
+  padding: 20px; 
 }
-.image-container {
-  position: relative;
-  width: 30%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-
-
 img {
   display: block;
   max-width: 15%;
   height: auto;
+  margin-right: 20px;
+  border-radius: 50%;     
 }
-div {
-  position: center;
-  top: 40%;
-  left: 50%;
-  
-}
+
 h1{
   text-align: center;
   color: #333;
@@ -41,11 +25,7 @@ h1{
 }
 
 
-img {
-  margin-right: 20px;
-  border-radius: 50%;
-  
-}
+
 
 .text {
   display: flex;
@@ -92,7 +72,35 @@ header {
 
 #paragraph{
   text-align: left;
+  max-width: 37.5em;
+	margin: 0 auto;
+	margin-top: 3em;
+	line-height: 1.5em;
 }
+
+
+.footer {
+	padding: 4em 0;
+	color: #000000;
+	background: #f3fd28;
+	margin-top: 3em;
+}
+
+.footer p {
+	text-align: center;
+}
+
+.social {
+	text-align: center;
+  margin-left: -2em;
+}
+
+.social > li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 1.0em;
+}
+
 
 
 
