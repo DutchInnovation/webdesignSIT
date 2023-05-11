@@ -57,7 +57,8 @@ header{
   text-align: center;
   margin: 0 auto;
 	margin-top: 3em;
-  max-width: 37.5em;
+  padding: 8.5em 0;
+	
 }
 #image img {
   display: block; 
@@ -71,12 +72,18 @@ header{
 	margin-top: 3em;
 	line-height: 1.5em;
 }
+.paragraph h3{
+  color: #3fda4f;
+}
 
+h3{
+  color: #3fda4f;
+}
 
 .footer {
 	padding: 4em 0;
 	color: #000000;
-	background: #ebf07d;
+	background: #3fda4f;
 	margin-top: 3em;
 }
 
@@ -100,46 +107,5 @@ header{
 
 
 
-/* Make website responsive
 
-/* For devices with screen width up to 768px, such as tablets */
-@media (max-width: 768px) {
-  /* Adjust font sizes */
-  body {
-    font-size: 16px;
-  }
-  /* Adjust layout using a responsive grid system */
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 768px;
-    padding: 0 10px;
-  }
-  .item {
-    width: 100%;
-  }
-  /* Adjust image sizes */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* For devices with screen width up to 480px, such as cellphones */
-@media (max-width: 480px) {
-  /* Adjust font sizes */
-  body {
-    font-size: 14px;
-  }
-  /* Adjust layout using a responsive grid system */
-  .container {
-    max-width: 480px;
-    padding: 0;
-  }
-  .item {
-    width: 100%;
-  }
-}
 
