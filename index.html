@@ -1,99 +1,139 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  </head>
-  <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      margin:0px; 
-    }
-    img {
-      display: block;
-      max-width: 15%;
-      height: auto;
-      margin-right: 20px;
-      border-radius: 50%;     
-    }
-    
-    h1{
-      text-align: center;
-      color: #333;
-    }
-    .wrapper {
-      display: flex;
-      align-items: center;
-      border: 1px solid #ccc; 
-      padding: 10px; 
-    }
-    
-    .picture{
-      border-radius: 50%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-   
-    a {
-      color: #000000;
-      text-decoration: none;
-    }
-    a:visited {
-      color: rgb(0, 0, 0);
-    }
-    a:hover {
-      color: #666;
-    }
-            
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-      text-align: left;
-    }        
-  </style>
+    <title>Two People</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+      html {
+  height: 100%;
+}
+body {
+  background-color: #EDEEE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+.card {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.card img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.card figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.card figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.card figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.card figcaption a:hover {
+  opacity: 1;
+}
+.card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.card h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.card p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.banner {
   
-  <header>
-    <h1>Welcome to our page</h1>
-  </header>
+  width: 100%;
+  height: 100%;
+  
+}
+
+    </style>
+  </head>
   <body>
-    
-    <a href="tmanh.html">
-        <div class="wrapper">
-            <img src="./img/DSC09080.JPG" alt="Your Image">
-            <div class="text">
-              <h2>Tuan Manh Nguyen</h2>
-              <h2> University of Messina, Italy</h2>
-              <p>Vietnamese culture is a unique blend of various traditions and influences, including food, clothing, festivals, family values, music, literature, and art forms such as water puppetry and silk weaving. It reflects the country's complex history and diverse influences, 
-                and is known for its vibrancy and respect for family and community.
-              </p>
-              
-              <p>Japan is a truly amazing country with so much to offer. 
-                
-                The people are friendly and welcoming, the food is super delicious, and the natural beauty of the country is simply breathtaking. I feel lucky because I come to Japan in the most beautiful
-                season of the year, Sakura season and it so beautiful
-                
-              </p>
-              
-              
-            </div>
-          </div>          
-    </a>
-    <a href="richard.html">
-        <div class="wrapper">
-            <img src="https://media.licdn.com/dms/image/D4E03AQGrqAuxCa_09g/profile-displayphoto-shrink_200_200/0/1665496490719?e=1689206400&v=beta&t=9_ZaqkpztHHQrsI6uHKcRjRZsi0WHBpTR3MhcFcJXsw" alt="Richard">
-            <div class="text">
-              <h2>Richard Ruijgrok</h2>
-              <h2>Windesheim University, the Netherlands</h2>
-              <p>I'm Richard and I'm from the Netherlands and I'm half Dutch and half Thai. I'm a student at Windesheim University back in Zwolle studying Business IT.<br>In my free time, I enjoy diving and playing piano</p>
-			
-            </div>
-          </div>        
-    </a>
+    <figure class="card">
+      <img src="https://images.pling.com/img/00/00/59/57/30/1545981/be6dded789cbc3e28284e6e74172d414f36697c754c9813d80745e467721043a1b35.jpg" alt="tulips" class="banner">
+      <figcaption>
+        <img src="richard.jpg" alt="profile-sample4" class="profile">
+        <h2>Richard Ruijgrok<span>Business IT Student</span></h2>
+        <p>I'm Richard and I'm from the Netherlands. I'm half Dutch and half Thai. I'm a student at Windesheim University studying Business IT.</p>
+        <a href="richard.html" class="info">More Info</a>
+      </figcaption>
+    </figure>
+    <figure class="card hover">
+      <img src="img/flower.JPG" alt="flower" class="banner">
+      <figcaption>
+        <h2>Our thoughts about Japan</h2>
+        <p>There are alot of things we both love about Japan such as Kura Sushi and the beautifull cherry blossoms</p>
+        <a href="info.html" class="info">More Info</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://cdn-bmalj.nitrocdn.com/uirOOtSrYrqqUksKHkiSCjZGZlPeXsmk/assets/images/optimized/rev-72e5e55/images/Top-things-to-do-in-Hanoi-Vietnam.jpg" alt="fuji" class="banner">
+      <figcaption>
+        <img src="img/DSC09080.JPG" alt="tmahn" class="profile">
+        <h2>Tuan Manh Nguyen<span>Data Analyst Student</span></h2>
+        <p>I'm Tuan Manh Nguyen and I'm Vietnamese it is a country rich in culture, good food and lovely people.</p>
+        <a href="tmanh.html" class="info">More Info</a>
+      </figcaption>
+    </figure>
   </body>
 </html>
