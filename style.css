@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+html {
+	height: 100%;
+}
+html, body {
+	padding:0;
+	margin:0;
+}
+.body-richard {
+	color: #2c3e50;
+	font-size: 1em;
+	font-family: 'Source Serif Pro', 'Helvetica Neue', serif;
+}
+h1,h2,h3 {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-weight: 700 !important;
+}
+a {
+	color: #2c3e50 !important;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+.header-richard {
+	padding: 8.5em 0;
+	background-image: url('https://images.pling.com/img/00/00/59/57/30/1545981/be6dded789cbc3e28284e6e74172d414f36697c754c9813d80745e467721043a1b35.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header-tmanh {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('img/fuji.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 525px;
+	color: #fff;
+}
+.header-info {
+	padding: 8.5em 0;
+	background-image: url('img/realfuji.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 525px;
+}
+.info-color {
+	color: #BC002D;
+}
+.footer-info {
+	padding: 4em 0;
+	color: #fff;
+	background: #BC002D;
+	margin-top: 3em;
+	text-align: center;
+}
+.footer,.header-intro,.header-name {
+	text-align: center;
+}
+.header-intro {
+	margin-bottom: 0em;
+	color: #e67e22;
+	font-size: 2.25em;
+	text-shadow: 0px 1px 0px #d35400;
+}
+.header-name {
+	margin-top: -0.2em;
+	color: #e67e22;
+	font-size: 6.0em;
+	text-shadow: 0px 3px 0px #d35400;
+	font-weight: 700;
+}
+.about,.questions {
+	/* max-width: 37.5em;
+	*/
+	/* margin: 0 auto;
+	*/
+	margin-top: 3em;
+	line-height: 1.5em;
+}
+.richard-color {
+	color: #e67e22;
+}
+.tmanh-color{
+	color: #5cc1e9;
+}
+.footer-richard {
+	padding: 4em 0;
+	color: #fff;
+	background: #e67e22;
+	margin-top: 3em;
+	text-align: center;
+}
+.footer-tmanh {
+	padding: 4em 0;
+	color: #000000;
+	background: #5cc1e9;
+	margin-top: 3em;
+	text-align: center;
+}
+.social {
+	text-align: center;
+	margin-left: -2em;
+}
+.social > li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 1.0em;
+}
+.picture{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 15%;
+}
+#image img {
+	display: block;
+	margin: 0 auto;
+}
+#paragraph{
+	/* margin: 0 auto;
+	*/
+	margin-top: 3em;
+	line-height: 1.5em;
+}
+.picture-collage {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	margin-top: 3em;
+}
+.picture-collage img {
+	width: 100%;
+	height: auto;
+}
+#image img {
+	display: block;
+	margin: 0 auto;
+}
+#paragraph{
+	text-align: left;
+	max-width: 37.5em;
+	margin: 0 auto;
+	margin-top: 3em;
+	line-height: 1.5em;
+}
+.info-mid {
+	margin: 0 auto;
+	max-width: 75em;
+}
+.info {
+	color: white !important;
+}
+.index-body {
+	background-color: #EDEEE9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	margin: 0;
+	height: 100%;
+}
+.card {
+	font-family: 'Roboto', Arial, sans-serif;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 230px;
+	max-width: 315px;
+	width: 100%;
+	color: #ffffff;
+	line-height: 1.4em;
+	background-color: #141414;
+}
+.card * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+.card img {
+	max-width: 100%;
+	vertical-align: top;
+}
+.card figcaption {
+	width: 100%;
+	background-color: #141414;
+	padding: 25px;
+	position: relative;
+}
+.card figcaption:before {
+	position: absolute;
+	content: '';
+	bottom: 100%;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 55px 0 0 400px;
+	border-color: transparent transparent transparent #141414;
+}
+.card figcaption a {
+	padding: 5px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	margin: 10px 0;
+	display: inline-block;
+	opacity: 0.65;
+	width: 47%;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.card figcaption a:hover {
+	opacity: 1;
+}
+.card .profile {
+	border-radius: 50%;
+	position: absolute;
+	bottom: 100%;
+	left: 25px;
+	z-index: 1;
+	max-width: 90px;
+	opacity: 1;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.card h2 {
+	margin: 0 0 5px;
+	font-weight: 300;
+}
+.card h2 span {
+	display: block;
+	font-size: 0.5em;
+	color: #2980b9;
+}
+.card p {
+	margin: 0 0 10px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	opacity: 0.8;
+}
+.banner {
+	width: 100%;
+	height: 100%;
+}
