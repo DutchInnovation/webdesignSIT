@@ -198,9 +198,9 @@ a:hover {
 	background-color: #141414;
 }
 .card * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.25s ease;
+	-webkit-box-sizing: border-box; /*sets the box sizing model for webkit-based browsers (e.g., Safari, Chrome). The border-box model includes the element's padding and border within its specified width and height.*/
+	box-sizing: border-box; /* ensures that the element's width and height include its padding and border.*/ 
+	-webkit-transition: all 0.25s ease; /*smooth transition */
 	transition: all 0.25s ease;
 }
 .card img {
