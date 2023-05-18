@@ -29,6 +29,19 @@ a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.dutch-header {
+	padding: 8.5em 0;
+	background-image: url('https://media-01.imu.nl/storage/hetfotoalbum.nl/23283/stedentrip-nederland-2558x1100-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.thai-header {
+	padding: 8.5em 0;
+	background-image: url('https://i.natgeofe.com/n/f12e6dc0-3515-45cd-9657-7c0d1a87a512/street-bangkok-thailand.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 .header-tmanh {
 	display: flex;
 	justify-content: center;
@@ -38,6 +51,20 @@ a:hover {
 	background-size: cover;
 	min-height: 525px;
 	color: #fff;
+}
+.vietnamese-header {
+	padding: 8.5em 0;
+	background-image: url('https://static.toiimg.com/photo/msid-91025208,width-96,height-65.cms');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.itallian-header {
+	padding: 8.5em 0;
+	background-image: url('https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .header-info {
 	padding: 8.5em 0;
@@ -73,10 +100,6 @@ a:hover {
 	font-weight: 700;
 }
 .about,.questions {
-	/* max-width: 37.5em;
-	*/
-	/* margin: 0 auto;
-	*/
 	margin-top: 3em;
 	line-height: 1.5em;
 }
